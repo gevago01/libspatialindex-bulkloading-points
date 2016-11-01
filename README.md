@@ -17,7 +17,7 @@ An example using the libspatialindex library to bulkload points into an R\*-Tree
 
 ## Install libspatialindex
 
-Clear instructions for installing the library can be found see [here](https://github.com/libspatialindex/libspatialindex/wiki/1.-Getting-Started) 
+Clear instructions for installing the library can be found [here](https://github.com/libspatialindex/libspatialindex/wiki/1.-Getting-Started) 
 
 ## How to run on Linux
 **Assumes libspatialindex is properly installed**
