@@ -1,0 +1,1484 @@
+desc: (none)
+cmd: ./BulkLoadRTree /exp_data/8c_50k_each.txt 100 0.7
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=256239242
+mem_heap_B=938345
+mem_heap_extra_B=481023
+mem_stacks_B=0
+heap_tree=detailed
+n7: 938345 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 446256 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 446256 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 446256 0x403B68: main (main.cpp:143)
+ n2: 148776 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 148776 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 148752 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 148752 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 148752 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 148752 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 148776 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 148776 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 148752 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 148752 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 148752 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 148752 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 72704 0x5179EFE: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+  n1: 72704 0x40104E8: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x40105F9: _dl_init (dl-init.c:30)
+    n1: 72704 0x4000CF8: ??? (in /lib/x86_64-linux-gnu/ld-2.23.so)
+     n1: 72704 0x2: ???
+      n1: 72704 0xFFF0002C5: ???
+       n1: 72704 0xFFF0002D5: ???
+        n1: 72704 0xFFF0002EF: ???
+         n0: 72704 0xFFF0002F3: ???
+ n1: 65536 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 65536 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 65536 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 65536 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 65536 0x403B68: main (main.cpp:143)
+ n0: 28297 in 45 places, all below massif's threshold (1.00%)
+ n1: 28000 0x40C594: __gnu_cxx::new_allocator<std::_Rb_tree_node<unsigned int> >::allocate(unsigned long, void const*) (new_allocator.h:104)
+  n1: 28000 0x40BFC0: std::allocator_traits<std::allocator<std::_Rb_tree_node<unsigned int> > >::allocate(std::allocator<std::_Rb_tree_node<unsigned int> >&, unsigned long) (alloc_traits.h:491)
+   n1: 28000 0x40B84B: std::_Rb_tree<unsigned int, unsigned int, std::_Identity<unsigned int>, std::less<unsigned int>, std::allocator<unsigned int> >::_M_get_node() (stl_tree.h:491)
+    n1: 28000 0x40AAC8: std::_Rb_tree_node<unsigned int>* std::_Rb_tree<unsigned int, unsigned int, std::_Identity<unsigned int>, std::less<unsigned int>, std::allocator<unsigned int> >::_M_create_node<unsigned int>(unsigned int&&) (stl_tree.h:545)
+     n1: 28000 0x409DD9: std::_Rb_tree_node<unsigned int>* std::_Rb_tree<unsigned int, unsigned int, std::_Identity<unsigned int>, std::less<unsigned int>, std::allocator<unsigned int> >::_Alloc_node::operator()<unsigned int>(unsigned int&&) const (stl_tree.h:459)
+      n1: 28000 0x408B14: std::_Rb_tree_iterator<unsigned int> std::_Rb_tree<unsigned int, unsigned int, std::_Identity<unsigned int>, std::less<unsigned int>, std::allocator<unsigned int> >::_M_insert_<unsigned int, std::_Rb_tree<unsigned int, unsigned int, std::_Identity<unsigned int>, std::less<unsigned int>, std::allocator<unsigned int> >::_Alloc_node>(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, unsigned int&&, std::_Rb_tree<unsigned int, unsigned int, std::_Identity<unsigned int>, std::less<unsigned int>, std::allocator<unsigned int> >::_Alloc_node&) (stl_tree.h:1509)
+       n1: 28000 0x4071D7: std::pair<std::_Rb_tree_iterator<unsigned int>, bool> std::_Rb_tree<unsigned int, unsigned int, std::_Identity<unsigned int>, std::less<unsigned int>, std::allocator<unsigned int> >::_M_insert_unique<unsigned int>(unsigned int&&) (stl_tree.h:1870)
+        n1: 28000 0x4061DF: std::set<unsigned int, std::less<unsigned int>, std::allocator<unsigned int> >::insert(unsigned int&&) (stl_set.h:494)
+         n1: 28000 0x4049A3: MyDataStream::findRandomIndices() (MyDataStream.h:38)
+          n1: 28000 0x40508B: MyDataStream::MyDataStream(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (MyDataStream.h:107)
+           n0: 28000 0x403A73: main (main.cpp:135)
+#-----------
+snapshot=2
+#-----------
+time=526985539
+mem_heap_B=1811143
+mem_heap_extra_B=1001305
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=719165678
+mem_heap_B=2515612
+mem_heap_extra_B=1368428
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=1028528103
+mem_heap_B=3439785
+mem_heap_extra_B=1954575
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=1237348377
+mem_heap_B=4061385
+mem_heap_extra_B=2337495
+mem_stacks_B=0
+heap_tree=detailed
+n6: 4061385 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2185992 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 2185992 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 2185992 0x403B68: main (main.cpp:143)
+ n2: 728688 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 728688 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 728664 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 728664 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 728664 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 728664 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 728688 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 728688 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 728664 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 728664 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 728664 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 728664 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 262144 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 262144 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 262144 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 262144 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 262144 0x403B68: main (main.cpp:143)
+ n0: 83169 in 46 places, all below massif's threshold (1.00%)
+ n1: 72704 0x5179EFE: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+  n1: 72704 0x40104E8: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x40105F9: _dl_init (dl-init.c:30)
+    n1: 72704 0x4000CF8: ??? (in /lib/x86_64-linux-gnu/ld-2.23.so)
+     n1: 72704 0x2: ???
+      n1: 72704 0xFFF0002C5: ???
+       n1: 72704 0xFFF0002D5: ???
+        n1: 72704 0xFFF0002EF: ???
+         n0: 72704 0xFFF0002F3: ???
+#-----------
+snapshot=6
+#-----------
+time=1495622861
+mem_heap_B=5093020
+mem_heap_extra_B=2839892
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=1798963270
+mem_heap_B=6001457
+mem_heap_extra_B=3407183
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=2218826866
+mem_heap_B=7256617
+mem_heap_extra_B=4225239
+mem_stacks_B=0
+heap_tree=detailed
+n5: 7256617 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 3929184 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 3929184 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 3929184 0x403B68: main (main.cpp:143)
+ n2: 1309752 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 1309752 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 1309728 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 1309728 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 1309728 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 1309728 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 1309752 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 1309752 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 1309728 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 1309728 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 1309728 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 1309728 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 524288 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 524288 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 524288 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 524288 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 524288 0x403B68: main (main.cpp:143)
+ n0: 183641 in 47 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=9
+#-----------
+time=2409186928
+mem_heap_B=7825468
+mem_heap_extra_B=4608516
+mem_stacks_B=0
+heap_tree=detailed
+n5: 7825468 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4267584 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 4267584 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 4267584 0x403B68: main (main.cpp:143)
+ n2: 1422552 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 1422552 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 1422528 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 1422528 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 1422528 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 1422528 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 1422552 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 1422552 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 1422528 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 1422528 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 1422528 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 1422528 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 524288 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 524288 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 524288 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 524288 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 524288 0x403B68: main (main.cpp:143)
+ n0: 188492 in 47 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=10
+#-----------
+time=2742647720
+mem_heap_B=9343711
+mem_heap_extra_B=5261169
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=2952916349
+mem_heap_B=9970657
+mem_heap_extra_B=5660591
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=3186290317
+mem_heap_B=10667929
+mem_heap_extra_B=6117263
+mem_stacks_B=0
+heap_tree=detailed
+n5: 10667929 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5646528 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 5646528 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 5646528 0x403B68: main (main.cpp:143)
+ n2: 1882200 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 1882200 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 1882176 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 1882176 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 1882176 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 1882176 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 1882200 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 1882200 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 1882176 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 1882176 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 1882176 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 1882176 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1048576 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 1048576 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 1048576 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 1048576 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 1048576 0x403B68: main (main.cpp:143)
+ n0: 208425 in 47 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=13
+#-----------
+time=3500615086
+mem_heap_B=11612959
+mem_heap_extra_B=6745537
+mem_stacks_B=0
+heap_tree=detailed
+n5: 11612959 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 6205680 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 6205680 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 6205680 0x403B68: main (main.cpp:143)
+ n2: 2068584 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 2068584 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 2068560 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 2068560 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 2068560 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 2068560 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 2068584 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 2068584 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 2068560 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 2068560 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 2068560 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 2068560 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1048576 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 1048576 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 1048576 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 1048576 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 1048576 0x403B68: main (main.cpp:143)
+ n0: 221535 in 47 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=14
+#-----------
+time=3927570967
+mem_heap_B=12886871
+mem_heap_extra_B=7596337
+mem_stacks_B=0
+heap_tree=detailed
+n5: 12886871 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 6963408 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 6963408 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 6963408 0x403B68: main (main.cpp:143)
+ n2: 2321160 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 2321160 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 2321136 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 2321136 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 2321136 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 2321136 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 2321160 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 2321160 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 2321136 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 2321136 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 2321136 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 2321136 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1048576 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 1048576 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 1048576 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 1048576 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 1048576 0x403B68: main (main.cpp:143)
+ n0: 232567 in 47 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=15
+#-----------
+time=4221957073
+mem_heap_B=13765250
+mem_heap_extra_B=8158214
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=4543710580
+mem_heap_B=14726418
+mem_heap_extra_B=8801390
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=4782611769
+mem_heap_B=15439588
+mem_heap_extra_B=9281252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=5140895479
+mem_heap_B=16509627
+mem_heap_extra_B=9978493
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=5540827999
+mem_heap_B=18752122
+mem_heap_extra_B=10733974
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=5782510711
+mem_heap_B=19476241
+mem_heap_extra_B=11187911
+mem_stacks_B=0
+heap_tree=detailed
+n5: 19476241 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 10259208 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 10259208 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 10259208 0x403B68: main (main.cpp:143)
+ n2: 3419760 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 3419760 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 3419736 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 3419736 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 3419736 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 3419736 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 3419760 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 3419760 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 3419736 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 3419736 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 3419736 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 3419736 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 2097152 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 2097152 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 2097152 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 2097152 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 2097152 0x403B68: main (main.cpp:143)
+ n0: 280361 in 47 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=21
+#-----------
+time=6167996393
+mem_heap_B=20628567
+mem_heap_extra_B=11922785
+mem_stacks_B=0
+heap_tree=detailed
+n5: 20628567 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 10944720 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 10944720 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 10944720 0x403B68: main (main.cpp:143)
+ n2: 3648264 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 3648264 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 3648240 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 3648240 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 3648240 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 3648240 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 3648264 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 3648264 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 3648240 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 3648240 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 3648240 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 3648240 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 2097152 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 2097152 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 2097152 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 2097152 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 2097152 0x403B68: main (main.cpp:143)
+ n0: 290167 in 47 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=22
+#-----------
+time=6369151708
+mem_heap_B=21237851
+mem_heap_extra_B=12299909
+mem_stacks_B=0
+heap_tree=detailed
+n5: 21237851 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 11301048 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 11301048 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 11301048 0x403B68: main (main.cpp:143)
+ n2: 3767040 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 3767040 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 3767016 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 3767016 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 3767016 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 3767016 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 3767040 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 3767040 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 3767016 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 3767016 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 3767016 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 3767016 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 2097152 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 2097152 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 2097152 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 2097152 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 2097152 0x403B68: main (main.cpp:143)
+ n0: 305571 in 47 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=23
+#-----------
+time=6643513506
+mem_heap_B=22057051
+mem_heap_extra_B=12842893
+mem_stacks_B=0
+heap_tree=detailed
+n5: 22057051 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 11788344 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 11788344 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 11788344 0x403B68: main (main.cpp:143)
+ n2: 3929472 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 3929472 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 3929448 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 3929448 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 3929448 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 3929448 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 3929472 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 3929472 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 3929448 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 3929448 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 3929448 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 3929448 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 2097152 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 2097152 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 2097152 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 2097152 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 2097152 0x403B68: main (main.cpp:143)
+ n0: 312611 in 47 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=24
+#-----------
+time=7003666849
+mem_heap_B=23131524
+mem_heap_extra_B=13538540
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=7306074007
+mem_heap_B=24034020
+mem_heap_extra_B=14098956
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=7619908644
+mem_heap_B=24971104
+mem_heap_extra_B=14699952
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=7862870252
+mem_heap_B=25695408
+mem_heap_extra_B=15177536
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=8210816242
+mem_heap_B=26733027
+mem_heap_extra_B=15853277
+mem_stacks_B=0
+heap_tree=detailed
+n5: 26733027 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 14569560 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 14569560 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 14569560 0x403B68: main (main.cpp:143)
+ n2: 4856544 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 4856544 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 4856520 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 4856520 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 4856520 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 4856520 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 4856544 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 4856544 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 4856520 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 4856520 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 4856520 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 4856520 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 2097152 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 2097152 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 2097152 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 2097152 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 2097152 0x403B68: main (main.cpp:143)
+ n0: 353227 in 47 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=29
+#-----------
+time=8474151390
+mem_heap_B=27518346
+mem_heap_extra_B=16346854
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=8836073008
+mem_heap_B=28598991
+mem_heap_extra_B=17060113
+mem_stacks_B=0
+heap_tree=detailed
+n5: 28598991 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 15679512 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 15679512 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 15679512 0x403B68: main (main.cpp:143)
+ n2: 5226528 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 5226528 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 5226504 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 5226504 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 5226504 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 5226504 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 5226528 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 5226528 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 5226504 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 5226504 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 5226504 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 5226504 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 2097152 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 2097152 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 2097152 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 2097152 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 2097152 0x403B68: main (main.cpp:143)
+ n0: 369271 in 47 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=31
+#-----------
+time=9215302737
+mem_heap_B=29729947
+mem_heap_extra_B=17783413
+mem_stacks_B=0
+heap_tree=detailed
+n5: 29729947 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 16352208 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 16352208 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 16352208 0x403B68: main (main.cpp:143)
+ n2: 5450760 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 5450760 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 5450736 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 5450736 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 5450736 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 5450736 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 5450760 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 5450760 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 5450736 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 5450736 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 5450736 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 5450736 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 2097152 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 2097152 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 2097152 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 2097152 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 2097152 0x403B68: main (main.cpp:143)
+ n0: 379067 in 47 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=32
+#-----------
+time=9606972791
+mem_heap_B=30897504
+mem_heap_extra_B=18545368
+mem_stacks_B=0
+heap_tree=detailed
+n5: 30897504 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 17046720 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 17046720 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 17046720 0x403B68: main (main.cpp:143)
+ n2: 5682264 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 5682264 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 5682240 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 5682240 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 5682240 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 5682240 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 5682264 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 5682264 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 5682240 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 5682240 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 5682240 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 5682240 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 2097152 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 2097152 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 2097152 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 2097152 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 2097152 0x403B68: main (main.cpp:143)
+ n0: 389104 in 47 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=33
+#-----------
+time=9895345352
+mem_heap_B=31756430
+mem_heap_extra_B=19107882
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=10225807252
+mem_heap_B=32740735
+mem_heap_extra_B=19744441
+mem_stacks_B=0
+heap_tree=detailed
+n5: 32740735 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 18143064 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 18143064 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 18143064 0x403B68: main (main.cpp:143)
+ n2: 6047712 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 6047712 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 6047688 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 6047688 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 6047688 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 6047688 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 6047712 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 6047712 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 6047688 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 6047688 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 6047688 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 6047688 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 2097152 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 2097152 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 2097152 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 2097152 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 2097152 0x403B68: main (main.cpp:143)
+ n0: 405095 in 47 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=35
+#-----------
+time=10638799825
+mem_heap_B=38163964
+mem_heap_extra_B=20543452
+mem_stacks_B=0
+heap_tree=detailed
+n5: 38163964 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 18874440 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 18874440 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 18874440 0x403B68: main (main.cpp:143)
+ n2: 6291528 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 6291528 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 6291480 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 6291480 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 6291480 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 6291480 0x403B68: main (main.cpp:143)
+   n0: 48 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 6291528 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 6291528 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 6291480 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 6291480 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 6291480 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 6291480 0x403B68: main (main.cpp:143)
+   n0: 48 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 6291456 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 6291456 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 6291456 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 6291456 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 6291456 0x403B68: main (main.cpp:143)
+ n0: 415012 in 47 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=36
+#-----------
+time=10854412611
+mem_heap_B=36711736
+mem_heap_extra_B=20944544
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=11070026425
+mem_heap_B=37356266
+mem_heap_extra_B=21340502
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=11301119714
+mem_heap_B=38046657
+mem_heap_extra_B=21764319
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=11560262802
+mem_heap_B=38820322
+mem_heap_extra_B=22271198
+mem_stacks_B=0
+heap_tree=detailed
+n5: 38820322 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 20512080 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 20512080 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 20512080 0x403B68: main (main.cpp:143)
+ n2: 6837384 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 6837384 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 6837360 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 6837360 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 6837360 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 6837360 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 6837384 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 6837384 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 6837360 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 6837360 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 6837360 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 6837360 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 4194304 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 4194304 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 4194304 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 4194304 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 4194304 0x403B68: main (main.cpp:143)
+ n0: 439170 in 47 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=40
+#-----------
+time=11919194865
+mem_heap_B=39891173
+mem_heap_extra_B=22955819
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=12170708059
+mem_heap_B=40659822
+mem_heap_extra_B=23442202
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=12428762855
+mem_heap_B=41428840
+mem_heap_extra_B=23956232
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=12691529742
+mem_heap_B=42213357
+mem_heap_extra_B=24470499
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=12991365473
+mem_heap_B=43109128
+mem_heap_extra_B=25049512
+mem_stacks_B=0
+heap_tree=detailed
+n5: 43109128 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 23051088 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 23051088 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 23051088 0x403B68: main (main.cpp:143)
+ n2: 7683720 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 7683720 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 7683696 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 7683696 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 7683696 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 7683696 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 7683720 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 7683720 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 7683696 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 7683696 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 7683696 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 7683696 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 4194304 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 4194304 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 4194304 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 4194304 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 4194304 0x403B68: main (main.cpp:143)
+ n0: 496296 in 47 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=45
+#-----------
+time=13235402520
+mem_heap_B=43838802
+mem_heap_extra_B=25548622
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=13513414351
+mem_heap_B=44670518
+mem_heap_extra_B=26087026
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=13799972691
+mem_heap_B=45528004
+mem_heap_extra_B=26656340
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=13977507265
+mem_heap_B=46059211
+mem_heap_extra_B=27016653
+mem_stacks_B=0
+heap_tree=detailed
+n5: 46059211 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 24805872 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 24805872 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 24805872 0x403B68: main (main.cpp:143)
+ n2: 8268648 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 8268648 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 8268624 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 8268624 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 8268624 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 8268624 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 8268648 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 8268648 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 8268624 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 8268624 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 8268624 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 8268624 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 4194304 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 4194304 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 4194304 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 4194304 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 4194304 0x403B68: main (main.cpp:143)
+ n0: 521739 in 47 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=49
+#-----------
+time=14085313999
+mem_heap_B=46380840
+mem_heap_extra_B=27235632
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=14124806886
+mem_heap_B=46499012
+mem_heap_extra_B=27307708
+mem_stacks_B=0
+heap_tree=detailed
+n5: 46499012 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 25067520 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 25067520 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 25067520 0x403B68: main (main.cpp:143)
+ n2: 8355864 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 8355864 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 8355840 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 8355840 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 8355840 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 8355840 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 8355864 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 8355864 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 8355840 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 8355840 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 8355840 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 8355840 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 4194304 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 4194304 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 4194304 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 4194304 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 4194304 0x403B68: main (main.cpp:143)
+ n0: 525460 in 47 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=51
+#-----------
+time=14276234993
+mem_heap_B=46951689
+mem_heap_extra_B=27593111
+mem_stacks_B=0
+heap_tree=detailed
+n5: 46951689 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 25336800 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 25336800 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 25336800 0x403B68: main (main.cpp:143)
+ n2: 8445624 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 8445624 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 8445600 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 8445600 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 8445600 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 8445600 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 8445624 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 8445624 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 8445600 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 8445600 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 8445600 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 8445600 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 4194304 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 4194304 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 4194304 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 4194304 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 4194304 0x403B68: main (main.cpp:143)
+ n0: 529337 in 47 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=52
+#-----------
+time=14424550192
+mem_heap_B=47394842
+mem_heap_extra_B=27895502
+mem_stacks_B=0
+heap_tree=detailed
+n5: 47394842 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 25600392 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 25600392 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 25600392 0x403B68: main (main.cpp:143)
+ n2: 8533488 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 8533488 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 8533464 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 8533464 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 8533464 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 8533464 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 8533488 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 8533488 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 8533464 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 8533464 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 8533464 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 8533464 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 4194304 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 4194304 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 4194304 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 4194304 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 4194304 0x403B68: main (main.cpp:143)
+ n0: 533170 in 47 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=53
+#-----------
+time=14574711762
+mem_heap_B=47843173
+mem_heap_extra_B=28200163
+mem_stacks_B=0
+heap_tree=detailed
+n5: 47843173 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 25867080 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 25867080 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 25867080 0x403B68: main (main.cpp:143)
+ n2: 8622384 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 8622384 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 8622360 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 8622360 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 8622360 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 8622360 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 8622384 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 8622384 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 8622360 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 8622360 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 8622360 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 8622360 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 4194304 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 4194304 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 4194304 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 4194304 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 4194304 0x403B68: main (main.cpp:143)
+ n0: 537021 in 47 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=54
+#-----------
+time=14730364264
+mem_heap_B=48308222
+mem_heap_extra_B=28495594
+mem_stacks_B=0
+heap_tree=detailed
+n5: 48308222 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 26143632 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 26143632 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 26143632 0x403B68: main (main.cpp:143)
+ n2: 8714568 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 8714568 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 8714544 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 8714544 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 8714544 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 8714544 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 8714568 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 8714568 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 8714544 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 8714544 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 8714544 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 8714544 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 4194304 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 4194304 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 4194304 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 4194304 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 4194304 0x403B68: main (main.cpp:143)
+ n0: 541150 in 47 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=55
+#-----------
+time=14884092179
+mem_heap_B=48767372
+mem_heap_extra_B=28804628
+mem_stacks_B=0
+heap_tree=detailed
+n5: 48767372 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 26416800 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 26416800 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 26416800 0x403B68: main (main.cpp:143)
+ n2: 8805624 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 8805624 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 8805600 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 8805600 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 8805600 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 8805600 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 8805624 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 8805624 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 8805600 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 8805600 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 8805600 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 8805600 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 4194304 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 4194304 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 4194304 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 4194304 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 4194304 0x403B68: main (main.cpp:143)
+ n0: 545020 in 47 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=56
+#-----------
+time=15042360647
+mem_heap_B=49239626
+mem_heap_extra_B=29108214
+mem_stacks_B=0
+heap_tree=detailed
+n5: 49239626 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 26697672 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 26697672 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 26697672 0x403B68: main (main.cpp:143)
+ n2: 8899248 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 8899248 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 8899224 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 8899224 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 8899224 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 8899224 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 8899248 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 8899248 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 8899224 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 8899224 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 8899224 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 8899224 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 4194304 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 4194304 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 4194304 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 4194304 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 4194304 0x403B68: main (main.cpp:143)
+ n0: 549154 in 47 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=57
+#-----------
+time=15198657679
+mem_heap_B=49705603
+mem_heap_extra_B=29425749
+mem_stacks_B=0
+heap_tree=detailed
+n5: 49705603 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 26974872 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 26974872 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 26974872 0x403B68: main (main.cpp:143)
+ n2: 8991648 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 8991648 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 8991624 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 8991624 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 8991624 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 8991624 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 8991648 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 8991648 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 8991624 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 8991624 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 8991624 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 8991624 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 4194304 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 4194304 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 4194304 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 4194304 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 4194304 0x403B68: main (main.cpp:143)
+ n0: 553131 in 47 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=58
+#-----------
+time=15360999099
+mem_heap_B=50190876
+mem_heap_extra_B=29731932
+mem_stacks_B=0
+heap_tree=detailed
+n5: 50190876 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 27263520 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 27263520 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 27263520 0x403B68: main (main.cpp:143)
+ n2: 9087864 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 9087864 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 9087840 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 9087840 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 9087840 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 9087840 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 9087864 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 9087864 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 9087840 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 9087840 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 9087840 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 9087840 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 4194304 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 4194304 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 4194304 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 4194304 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 4194304 0x403B68: main (main.cpp:143)
+ n0: 557324 in 47 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=59
+#-----------
+time=15521535437
+mem_heap_B=50671287
+mem_heap_extra_B=30050849
+mem_stacks_B=0
+heap_tree=detailed
+n5: 50671287 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 27549360 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 27549360 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 27549360 0x403B68: main (main.cpp:143)
+ n2: 9183144 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 9183144 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 9183120 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 9183120 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 9183120 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 9183120 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 9183144 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 9183144 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 9183120 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 9183120 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 9183120 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 9183120 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 4194304 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 4194304 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 4194304 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 4194304 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 4194304 0x403B68: main (main.cpp:143)
+ n0: 561335 in 47 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=60
+#-----------
+time=15686335572
+mem_heap_B=51164574
+mem_heap_extra_B=30364802
+mem_stacks_B=0
+heap_tree=detailed
+n5: 51164574 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 27842760 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 27842760 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 27842760 0x403B68: main (main.cpp:143)
+ n2: 9280944 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 9280944 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 9280920 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 9280920 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 9280920 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 9280920 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 9280944 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 9280944 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 9280920 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 9280920 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 9280920 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 9280920 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 4194304 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 4194304 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 4194304 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 4194304 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 4194304 0x403B68: main (main.cpp:143)
+ n0: 565622 in 47 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=61
+#-----------
+time=15851354394
+mem_heap_B=51658396
+mem_heap_extra_B=30686420
+mem_stacks_B=0
+heap_tree=detailed
+n5: 51658396 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 28136448 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 28136448 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 28136448 0x403B68: main (main.cpp:143)
+ n2: 9378840 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 9378840 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 9378816 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 9378816 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 9378816 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 9378816 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 9378840 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 9378840 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 9378816 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 9378816 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 9378816 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 9378816 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 4194304 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 4194304 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 4194304 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 4194304 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 4194304 0x403B68: main (main.cpp:143)
+ n0: 569964 in 47 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=62
+#-----------
+time=16018342442
+mem_heap_B=52157775
+mem_heap_extra_B=31010497
+mem_stacks_B=0
+heap_tree=detailed
+n5: 52157775 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 28433520 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 28433520 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 28433520 0x403B68: main (main.cpp:143)
+ n2: 9477864 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 9477864 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 9477840 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 9477840 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 9477840 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 9477840 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 9477864 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 9477864 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 9477840 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 9477840 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 9477840 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 9477840 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 4194304 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 4194304 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 4194304 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 4194304 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 4194304 0x403B68: main (main.cpp:143)
+ n0: 574223 in 47 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=63
+#-----------
+time=16188340346
+mem_heap_B=52665997
+mem_heap_extra_B=31333979
+mem_stacks_B=0
+heap_tree=peak
+n5: 52665997 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 28735776 0x4E7B2EE: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 28735776 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n0: 28735776 0x403B68: main (main.cpp:143)
+ n2: 9578616 0x4E64C95: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 9578616 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 9578592 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 9578592 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 9578592 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 9578592 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 9578616 0x4E64CA5: SpatialIndex::Region::initialize(double const*, double const*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n2: 9578616 0x4E64DDA: SpatialIndex::Region::Region(SpatialIndex::Region const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 9578592 0x4E78ACA: SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region const&, long, unsigned int, unsigned char*, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 9578592 0x4E7B30C: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n1: 9578592 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+      n0: 9578592 0x403B68: main (main.cpp:143)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 4194304 0x4E7BBC3: std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<SpatialIndex::RTree::ExternalSorter::Record**, std::vector<SpatialIndex::RTree::ExternalSorter::Record*, std::allocator<SpatialIndex::RTree::ExternalSorter::Record*> > >, SpatialIndex::RTree::ExternalSorter::Record* const&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+  n1: 4194304 0x4E7936C: SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*) (in /usr/local/lib/libspatialindex.so.4.0.1)
+   n1: 4194304 0x4E7B31B: SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, unsigned int, unsigned int, unsigned int, unsigned int) (in /usr/local/lib/libspatialindex.so.4.0.1)
+    n1: 4194304 0x4E95502: SpatialIndex::RTree::createAndBulkLoadNewRTree(SpatialIndex::RTree::BulkLoadMethod, SpatialIndex::IDataStream&, SpatialIndex::IStorageManager&, double, unsigned int, unsigned int, unsigned int, SpatialIndex::RTree::RTreeVariant, long&) (in /usr/local/lib/libspatialindex.so.4.0.1)
+     n0: 4194304 0x403B68: main (main.cpp:143)
+ n0: 578685 in 47 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=64
+#-----------
+time=16565462489
+mem_heap_B=52773210
+mem_heap_extra_B=31404822
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=16743017642
+mem_heap_B=48026621
+mem_heap_extra_B=24781979
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=16920552308
+mem_heap_B=43003757
+mem_heap_extra_B=17945331
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=17099132598
+mem_heap_B=38044177
+mem_heap_extra_B=11274175
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=17276667219
+mem_heap_B=33074993
+mem_heap_extra_B=4429799
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=17454219986
+mem_heap_B=25607927
+mem_heap_extra_B=200193
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=17631759148
+mem_heap_B=27182915
+mem_heap_extra_B=742693
+mem_stacks_B=0
+heap_tree=empty
