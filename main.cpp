@@ -132,9 +132,11 @@ int main(int argc, char **argv) {
     // (LRU buffer, etc can be created the same way).
 
     //pass the file name to create a stream
+    cout << "----------------------------------------------------"<< endl;
     MyDataStream stream(argv[1], MEASUREMENTS);
     cout << "Dimensionality:" << stream.getDimensionality() << endl;
     cout << "Max cluster id:" << stream.getMax_clusterid() << endl;
+    cout << "----------------------------------------------------"<< endl;
     // Create and bulk load a new RTree using STR and the  RSTAR splitting policy.
     SpatialIndex::id_type indexIdentifier = 0;
     SpatialIndex::ISpatialIndex *tree = SpatialIndex::RTree::createAndBulkLoadNewRTree(
@@ -146,7 +148,7 @@ int main(int argc, char **argv) {
     auto query_points = stream.getRandom_points();
 
     for (Point &p:query_points) {
-        cout << "Looking for point:" << p << endl;
+        cout << "Looking for point:" << p ;
         /* get a plain double array from the query point*/
         std::vector<double> const &point_coordinates = p.getCoordinates();
         ulong dimensionality = point_coordinates.size();
@@ -162,7 +164,7 @@ int main(int argc, char **argv) {
         cout << "Belongs to cluster:" << cluster << endl;
         double slib_time = std::chrono::duration_cast<std::chrono::microseconds>(t2 - t1).count();
         times.push_back(slib_time);
-        std::cout << "Retrieval time:" << slib_time << std::endl;
+        std::cout << "Retrieval time:" << slib_time << std::endl<<std::endl;
     }
 
     //print useful info & stats

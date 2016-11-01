@@ -46,8 +46,8 @@ ostream &operator<<(ostream &ostream1, const Point &point) {
     for (double dim:point.coordinates) {
         ostream1 << dim << ",";
     }
-    ostream1 << endl<<point.getCluster_id()<<endl;
-    ostream1 << "dim:"<<point.getCoordinates().size()<<endl;
+    ostream1 << " from Cluster:"<<point.getCluster_id()<<endl;
+    ostream1 << "Dimensionality:"<<point.getCoordinates().size()<<endl;
 
 
     return ostream1;

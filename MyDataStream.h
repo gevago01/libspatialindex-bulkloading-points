@@ -31,9 +31,15 @@ public:
     }
 
     void findRandomIndices() {
-
+        auto n=0;
+        if (num_of_points<measurements){
+            n=num_of_points;
+        }
+        else{
+            n=measurements;
+        }
         srand(time(NULL));
-        while (random_indices.size() != measurements) {
+        while (random_indices.size() != n) {
             int randNum = rand() % (num_of_points);
             random_indices.insert(randNum);
         }
