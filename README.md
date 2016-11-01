@@ -12,7 +12,7 @@ An example using the libspatialindex library to bulkload points into an R\*-Tree
 8. It queries the R-Tree and estimates the average time for retrieving a point. It also estimates the error of the measurements 
 
 ## Notes:
-1. Since the application reads from a stream, it does not create unneccesarry objects.  The application uses as much memory as the size of the data 
+1. Since the application reads from a stream, it does not create unnecessary objects.  The application uses as much memory as the size of the data 
 2. Assumes libspatialindex is properly installed (see [here how to install](https://github.com/libspatialindex/libspatialindex/wiki/1.-Getting-Started) )
 3. A **sample file** is provided
 
