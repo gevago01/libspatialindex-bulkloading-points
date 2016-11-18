@@ -13,10 +13,14 @@ An example using the libspatialindex library to bulkload points into an **in-mem
 
 ## Notes:
 1. Since the application reads from a stream, it does not create unnecessary objects.  However, the application momentarily uses twice as much memory as the size of the data. This is because the stream is a stream of regions and each region holds two coordinates (*low* and *high* that are basically the same coordinates, i.e. the point's coordinates). As soon as the building is done however, memory usage is equal to the size of the input data (see **massif/12508.png**).  
-2. Assumes libspatialindex is properly installed (see [here how to install](https://github.com/libspatialindex/libspatialindex/wiki/1.-Getting-Started) )
-3. A **sample file** is provided
+2. A **sample file** is provided
+
+## Install libspatialindex
+
+Clear instructions for installing the library can be found [here](https://github.com/libspatialindex/libspatialindex/wiki/1.-Getting-Started) 
 
 ## How to run on Linux
+**Assumes libspatialindex is properly installed**
 ```bash
 mkdir build
 cd build
