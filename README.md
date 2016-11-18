@@ -1,5 +1,5 @@
 # libspatialindex-bulkloading-points
-An example using the libspatialindex library to bulkload points into an R\*-Tree. This example loads points into an R-Tree using the bulkloading STR method. The example was adapted from [here](https://github.com/libspatialindex/libspatialindex/blob/master/test/rtree/RTreeBulkLoad.cc). It contains some unnecessary stuff such as using a custom-made class "Point.h" and assuming that each point belongs to a cluster. 
+An example using the libspatialindex library to bulkload points into an **in-memory** R\*-Tree. This example loads points into an R-Tree using the bulkloading STR method. The example was adapted from [here](https://github.com/libspatialindex/libspatialindex/blob/master/test/rtree/RTreeBulkLoad.cc). It contains some unnecessary stuff such as using a custom-made class "Point.h" and assuming that each point belongs to a cluster. 
 
 ## The application does the following:
 1. It implements a DataStream to handle our input. 
