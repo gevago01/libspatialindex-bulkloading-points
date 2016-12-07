@@ -70,7 +70,7 @@ float getFileSize(std::string const filename) {
     return file_size;
 }
 
-void calculate_statistics(std::vector<double> &times, float file_size) {
+void calculate_statistics(uint32_t dimen,std::vector<double> &times, float file_size) {
 
     //sort times
     std::sort(times.begin(), times.end());
@@ -96,7 +96,8 @@ void calculate_statistics(std::vector<double> &times, float file_size) {
 
 
     cout << "#Dataset size|Time|Standard error" << endl;
-    cout << "bst:" << file_size / GB << "\t" << mean << "\t" << std_error << "\t" << endl;
+//    cout << "bst:" << file_size / GB << "\t" << mean << "\t" << std_error << "\t" << endl;
+    cout << "bst:" << dimen << "\t" << mean << "\t" << std_error << "\t" << endl;
 
 }
 
@@ -178,7 +179,7 @@ int main(int argc, char **argv) {
     delete file;
     delete in_mem_manager;
 
-    calculate_statistics(times, getFileSize(argv[1]));
+    calculate_statistics(query_points[0].getCoordinates().size(), times, getFileSize(argv[1]));
 
     return 0;
 }
