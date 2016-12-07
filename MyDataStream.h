@@ -56,6 +56,7 @@ public:
         bool num_of_points_done = false;
         while (getline(m_fin, line)) {
 
+            std::cout<<"still reading headers"<<std::endl;
             if (num_of_points_done) {
                 break;
             }
@@ -120,9 +121,12 @@ public:
             throw Tools::IllegalArgumentException("Input file not found.");
         //get required info from headers
         readHeaders();
+        std::cout<<"read headers done"<<std::endl;
         //usefull for finding random points
         findRandomIndices();
+        std::cout<<"found random indices"<<std::endl;
         readNextEntry();
+        std::cout<<"con done"<<std::endl;
     }
 
     virtual ~MyDataStream() {
