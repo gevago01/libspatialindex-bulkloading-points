@@ -1,0 +1,1 @@
+/usr/bin/c++    -std=c++11 -Wall -Wextra -g   CMakeFiles/BulkLoadRTree.dir/main.cpp.o CMakeFiles/BulkLoadRTree.dir/Point.cpp.o  -o BulkLoadRTree /usr/local/lib/libspatialindex.so /usr/local/lib/libspatialindex_c.so -Wl,-rpath,/usr/local/lib 

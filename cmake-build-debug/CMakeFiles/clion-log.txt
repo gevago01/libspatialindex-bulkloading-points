@@ -1,0 +1,4 @@
+/home/giannis/IDES/clion-2017.1.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/giannis/ClionProjects/BulkLoadRTree
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/giannis/ClionProjects/BulkLoadRTree/cmake-build-debug

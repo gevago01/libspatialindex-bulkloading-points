@@ -1,0 +1,3 @@
+/home/giannis/ClionProjects/BulkLoadRTree/build/CMakeFiles/rebuild_cache.dir
+/home/giannis/ClionProjects/BulkLoadRTree/build/CMakeFiles/edit_cache.dir
+/home/giannis/ClionProjects/BulkLoadRTree/build/CMakeFiles/BulkLoadRTree.dir

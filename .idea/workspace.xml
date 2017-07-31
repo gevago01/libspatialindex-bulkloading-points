@@ -11,16 +11,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28d25911-aee6-4bb8-9ac5-d9577608b11c" name="Default" comment="updated">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/BulkLoadRTree.iml" afterPath="$PROJECT_DIR$/.idea/BulkLoadRTree.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="28d25911-aee6-4bb8-9ac5-d9577608b11c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyDataStream.h" afterPath="$PROJECT_DIR$/MyDataStream.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyVisitor.h" afterPath="$PROJECT_DIR$/MyVisitor.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Point.cpp" afterPath="$PROJECT_DIR$/Point.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Point.h" afterPath="$PROJECT_DIR$/Point.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
     </list>
     <ignored path="BulkLoadRTree.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -122,7 +114,6 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RecentsManager">
@@ -335,7 +326,7 @@
       <workItem from="1482228990966" duration="1297000" />
       <workItem from="1485621278334" duration="1025000" />
       <workItem from="1487606085741" duration="805000" />
-      <workItem from="1501515205211" duration="1868000" />
+      <workItem from="1501515205211" duration="2081000" />
     </task>
     <task id="LOCAL-00001" summary="added massif profiling and sample file">
       <created>1478004919788</created>
@@ -386,11 +377,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481118295224</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="clang-tidy inspections">
+      <created>1501517194122</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1501517194122</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62229000" />
+    <option name="totallyTimeSpent" value="62442000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -403,7 +401,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1922" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17609392" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -447,7 +444,8 @@
     <MESSAGE value="updated" />
     <MESSAGE value="fixed bug with reading file stats" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="clang-tidy inspections" />
+    <option name="LAST_COMMIT_MESSAGE" value="clang-tidy inspections" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
