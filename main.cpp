@@ -33,26 +33,24 @@
 #include "MyVisitor.h"
 #include "MyDataStream.h"
 
-#define MEASUREMENTS 700
+#define MEASUREMENTS 600
 #define CUT_MEASUREMENTS 100
 #define GB 1000000000
-
-#include "Point.h"
 
 using std::cout;
 using std::endl;
 
 
 void printInfo(SpatialIndex::ISpatialIndex *tree, SpatialIndex::StorageManager::IBuffer *file,SpatialIndex::id_type index_id);
-float getFileSize(std::string const filename);
+float getFileSize(std::string &filename);
 void calculate_statistics(std::vector<double> &times, float file_size);
-uint32_t  call_lib_spatial(SpatialIndex::Point const &point, MyVisitor &visitor, SpatialIndex::ISpatialIndex *tree_);
+auto  call_lib_spatial(SpatialIndex::Point const &point, MyVisitor &visitor, SpatialIndex::ISpatialIndex *tree_);
 
 void
 printInfo(SpatialIndex::ISpatialIndex *tree, SpatialIndex::StorageManager::IBuffer *file,
           SpatialIndex::id_type index_id) {
 
-    bool isIndexValid = tree->isIndexValid();
+    auto isIndexValid = tree->isIndexValid();
     if (!isIndexValid) {
         std::cerr << "ERROR: Structure is invalid!" << std::endl;
     } else {
@@ -64,13 +62,13 @@ printInfo(SpatialIndex::ISpatialIndex *tree, SpatialIndex::StorageManager::IBuff
     std::cerr << "Index ID: " << index_id << std::endl;
 }
 
-float getFileSize(std::string const filename) {
+float getFileSize(std::string const &filename) {
     std::ifstream in(filename, std::ifstream::ate | std::ifstream::binary);
     auto file_size = in.tellg();
     return file_size;
 }
 
-void calculate_statistics(uint32_t dimen,std::vector<double> &times, float file_size) {
+void calculate_statistics(long dimen,std::vector<double> &times, float file_size) {
 
     //sort times
     std::sort(times.begin(), times.end());
@@ -96,13 +94,12 @@ void calculate_statistics(uint32_t dimen,std::vector<double> &times, float file_
 
 
     cout << "#Dataset size|Time|Standard error" << endl;
-//    cout << "bst:" << file_size / GB << "\t" << mean << "\t" << std_error << "\t" << endl;
+    cout << "bst:" << file_size / GB << "\t" << mean << "\t" << std_error << "\t" << endl;
     cout << "bst:" << dimen << "\t" << mean << "\t" << std_error << "\t" << endl;
 
 }
 
-inline uint32_t
-call_lib_spatial(SpatialIndex::Point const &point, MyVisitor &visitor, SpatialIndex::ISpatialIndex *tree_) {
+auto  call_lib_spatial(SpatialIndex::Point const &point, MyVisitor &visitor, SpatialIndex::ISpatialIndex *tree_) {
     tree_->pointLocationQuery(point, visitor);
 
     return std::stol(visitor.getCluster_id());
@@ -121,8 +118,8 @@ int main(int argc, char **argv) {
     }
 
 
-    double utilization = atof(argv[3]);
-    int capacity = atoi(argv[2]);
+    auto utilization = std::stod(argv[3]);
+    auto capacity = static_cast<uint32_t>(std::stoi(argv[2]));
 
     //create new in memory storage manager
     SpatialIndex::IStorageManager *in_mem_manager = SpatialIndex::StorageManager::createNewMemoryStorageManager();
@@ -148,7 +145,7 @@ int main(int argc, char **argv) {
 
     auto query_points = stream.getRandom_points();
 
-    for (Point &p:query_points) {
+    for (auto &p:query_points) {
         cout << "Looking for point:" << p ;
         /* get a plain double array from the query point*/
         std::vector<double> const &point_coordinates = p.getCoordinates();

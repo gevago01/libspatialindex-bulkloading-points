@@ -30,7 +30,7 @@ Point::Point(vector<double> records) : point_id(id_generator) {
  */
 Point::Point(vector<string> records) : point_id(id_generator) {
     double one_dimension;
-    for (string record:records) {
+    for (const auto &record:records) {
         one_dimension = stringToDouble(record);
         coordinates.push_back(one_dimension);
     }

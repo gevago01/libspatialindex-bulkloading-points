@@ -18,22 +18,22 @@ public:
         return cluster_id;
     }
 
-    MyVisitor(uint32_t const max_cluster_id) {
-        data_length = std::to_string(max_cluster_id).length();
+    explicit MyVisitor(uint32_t const max_cluster_id) {
+        data_length = static_cast<uint32_t>(std::to_string(max_cluster_id).length());
     }
 
-    void visitNode(const SpatialIndex::INode &) {
+    void visitNode(const SpatialIndex::INode &in) override {
     }
 
 
-    void visitData(std::vector<const SpatialIndex::IData *> &data) {
+    void visitData(std::vector<const SpatialIndex::IData *> &data) override {
         std::cout<<"size:"<<data.size()<<std::endl;
     }
 
-    void visitData(const SpatialIndex::IData &d) {
+    void visitData(const SpatialIndex::IData &d) override {
         //_indices.push_back(d.getIdentifier());
 
-        byte *bytearray = 0;
+        byte *bytearray = nullptr;
         //plus one for the a null terminated string
         char char_cluster_id[data_length + 1];
 

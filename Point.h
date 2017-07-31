@@ -17,7 +17,7 @@ class Point {
     //friend function that prints the object
     friend std::ostream &operator<<(std::ostream &, const Point &);
 
-    friend std::ostream &operator<<(std::ostream &ostream1, std::vector<double> const coordinates);
+    friend std::ostream &operator<<(std::ostream &ostream1, std::vector<double> coordinates);
 
     // friend class declaration is its own a forward declaration
     friend class Cluster;
@@ -36,9 +36,9 @@ private:
     static int id_generator;
 
 public:
-    Point(std::vector<std::string> records);
+    explicit Point(std::vector<std::string> records);
 
-    Point(std::vector<double> records);
+    explicit Point(std::vector<double> records);
 
     Point() : /*cluster_id(0), num_of_dimensions(0), */ point_id(id_generator) {
         ++id_generator;
@@ -57,7 +57,7 @@ public:
     /**
      * Converts string to double
      */
-    static double stringToDouble(std::string const str);
+    static double stringToDouble(std::string str);
 
     Point &operator=(Point &&point) = default;
 

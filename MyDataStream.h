@@ -16,7 +16,7 @@ private:
     long num_of_clusters;
     long cluster_size;
     long num_of_points;
-    uint32_t dimensionality;
+    uint64_t dimensionality;
     std::vector<Point> random_points;
     long max_clusterid;
     uint32_t point_counter = 0;
@@ -70,7 +70,7 @@ public:
         }
     }
 
-    bool getFileStats(std::string line) {
+    bool getFileStats(const std::string &line) {
 
         //if line contains the number of clusters
         if ((line.find("Number of clusters") != std::string::npos)) {
@@ -137,7 +137,7 @@ public:
     virtual SpatialIndex::IData *getNext() {
 
         if (m_pNext == 0)
-            return 0;
+            return nullptr;
 
         SpatialIndex::RTree::Data *ret = m_pNext;
         m_pNext = 0;
